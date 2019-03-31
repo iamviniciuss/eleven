@@ -2,7 +2,9 @@ const User = require('../models/User');
 
 module.exports = {
     async index(req, res){
-        const user = await User.find({}).sort('-createdAt');
+        const user = await User.find({}).sort();
+        console.log('idex');
+        console.log(user);
 
         return res.json(user);
     },

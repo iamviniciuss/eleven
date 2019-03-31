@@ -16,7 +16,8 @@ routes.post('/tweets', TweetController.store);
 
 routes.post('/likes/:id', LikeController.store);
 
-routes.post('/users' , UserController.store);
+routes.get('/users' , UserController.store);
+routes.post('/list_users' , UserController.store);
 routes.post('/user_login' , UserController.login);
 
 module.exports = routes;
