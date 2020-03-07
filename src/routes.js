@@ -2,22 +2,22 @@ const express = require('express');
 
 const routes = express.Router();
 
-const TweetController = require('./controllers/TweetController');
-const LikeController = require('./controllers/LikeController');
-const UserController = require('./controllers/UserController');
+// const TweetController = require('./controllers/TweetController');
+const UsuarioController = require('./controllers/UsuarioController');
+const SalaController = require('./controllers/SalaController');
 
 
 routes.get('/', (req,res)=>{
     res.send(':) Hello World')
 });
 
-routes.get('/tweets', TweetController.index)
-routes.post('/tweets', TweetController.store);
+routes.get('/usuarios', UsuarioController.index)
+routes.get('/usuario/:id/sala/:sala_id', UsuarioController.cartas)
 
-routes.post('/likes/:id', LikeController.store);
+routes.get('/salas', SalaController.index)
+// routes.get('/tweets', TweetController.index)
+// routes.post('/tweets', TweetController.store);
 
-routes.get('/users' , UserController.store);
-routes.post('/list_users' , UserController.store);
-routes.post('/user_login' , UserController.login);
+
 
 module.exports = routes;

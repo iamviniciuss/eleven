@@ -9,6 +9,8 @@
     "express": "^4.16.4",
     "global": "^4.3.2",
     "mongoose": "^5.4.10",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {

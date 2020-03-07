@@ -4,6 +4,14 @@ const cors = require('cors');
 
 const app = express();
 
+const sequelize = require('./sequelize');
+const UsuarioModel = require('./models/UsuarioModel');
+const CartaModel = require('./models/CartaModel');
+const BaralhoModel = require('./models/BaralhoModel');
+const SalaModel = require('./models/SalaModel');
+const BaralhoHasCartaModel = require('./models/BaralhoHasCartaModel');
+const SalaHasUsuarioModel = require('./models/SalaHasUsuarioModel');
+
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
