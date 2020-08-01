@@ -24,8 +24,8 @@ Baralho.init({
 module.exports = Baralho;
 
 // const f = new Baralho();
-Baralho.all().then((baralhos)=>{
-  baralhos.map((baralho)=>{
-    console.log(baralho.dataValues)
-  })
-});
+// Baralho.all().then((baralhos)=>{
+//   baralhos.map((baralho)=>{
+//     console.log(baralho.dataValues)
+//   })
+// });

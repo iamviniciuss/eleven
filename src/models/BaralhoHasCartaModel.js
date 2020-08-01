@@ -28,8 +28,8 @@ module.exports = BaralhoHasCarta;
 
 
 // const f = new BaralhoHasCarta();
-BaralhoHasCarta.all().then((baralhoHasCartas)=>{
-  baralhoHasCartas.map((baralhoHasCarta)=>{
-    console.log(baralhoHasCarta.dataValues)
-  })
-});
+// BaralhoHasCarta.all().then((baralhoHasCartas)=>{
+//   baralhoHasCartas.map((baralhoHasCarta)=>{
+//     console.log(baralhoHasCarta.dataValues)
+//   })
+// });
